@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azad Kashmir Flag</title>
+    <h1>kashmir flag</h1>
+    <style>
+        
+        .flag {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            border: 1px solid black; /* Optional border for visualization */
+        }
+
+        .top-section {
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+
+        .orange-part {
+            
+            width: 40.33%; /* Approximately one-third */
+            background-color: #FFA500; /* Orange color */
+        }
+
+        .green-part {
+            width: 70.67%; /* Approximately two-thirds */
+            background-color: #008000; /* Green color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .crescent-star{
+            position: absolute;
+            top: 25%;
+            left: 75%;
+        }
+
+        .crescent {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 8px solid white;
+            border-color: transparent white white transparent;
+            transform: rotateX('480');
+        }
+
+        .star {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .bottom-section {
+            width: 100%;
+            height: 50%;
+        }
+
+        .stripe {
+            width: 100%;
+            height: 16.66%; /* Roughly 1/6 of the bottom section (1/12 of total) */
+        }
+        .green{
+            background-color: #008000;
+        }
+        .white{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flag">
+    <div class="top-section">
+        <div class="orange-part"></div>
+        <div class="green-part">
+            <div class="crescent-star">
+                <div class="crescent"></div>
+                <div class="star"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="stripe green"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+        <div class="stripe white"></div>
+    </div>
+</div>
+
+</body>
+</html>
